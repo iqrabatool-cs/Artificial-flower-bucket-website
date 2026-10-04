@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flower Bucket | Artificial Flower Buckets</title>
+
+    <link rel="icon" href="images/flower-1.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="logo">
+            🌸 Flower Bucket
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+            <button class="cart-btn" onclick="openCart()">
+    🛒 Cart (<span id="cartCount">0</span>)
+</button>
+        </nav>
+    </header>
+
+
+    <!-- ================= HOME BANNER ================= -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <h1>Artificial Flower Buckets</h1>
+
+            <p>
+                Beautiful handmade flower buckets for gifts,
+                home decoration and special occasions.
+            </p>
+
+            <a href="#shop" class="hero-btn">
+                Shop Now
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- ================= SHOP ================= -->
+    <section class="shop-section" id="shop">
+
+        <div class="section-heading">
+            <h2>Our Flower Buckets</h2>
+            <p>Choose your favourite handmade flower bucket.</p>
+        </div>
+
+
+        <!-- ================= FLOWER BUCKETS ================= -->
+        <div class="category-heading">
+            <h3>Flower Buckets</h3>
+        </div>
+
+        <div class="products">
+
+
+            <!-- PRODUCT 1 -->
+            <div class="card">
+
+                <div class="image-wrap">
+                    <img src="images/classic-red-rose-flower-bucket.png"
+                         alt="Classic Red Rose Flower Bucket">
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Classic Red Rose Flower Bucket</h4>
+
+                    <p class="desc">
+                        Beautiful handmade red rose flower bucket,
+                        perfect for gifting and decoration.
+                    </p>
+
+                    <div class="price">
+                        Rs. 3,000
+                    </div>
+
+                    <button
+                        class="order-btn"
+                        onclick="addToCart('Classic Red Rose Flower Bucket', 3000)">
+                        Order Now
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+            <div class="card">
+
+                <div class="image-wrap">
+                    <img src="images/Pink-Rose-Flower-Bucket.png"
+                         alt="Pink Rose Flower Bucket">
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Pink Rose Flower Bucket</h4>
+
+                    <p class="desc">
+                        Elegant pink roses arranged beautifully
+                        for a lovely handmade gift.
+                    </p>
+
+                    <div class="price">
+                        Rs. 3,000
+                    </div>
+
+                    <button
+                        class="order-btn"
+                        onclick="addToCart('Pink Rose Flower Bucket', 3000)">
+                        Order Now
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+            <div class="card">
+
+                <div class="image-wrap">
+                    <img src="images/Elegant-Red-Rose-Bucket.png"
+                         alt="Elegant Red Rose Bucket">
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Elegant Red Rose Bucket</h4>
+
+                    <p class="desc">
+                        A stylish red rose arrangement made
+                        for beautiful moments.
+                    </p>
+
+                    <div class="price">
+                        Rs. 2,500
+                    </div>
+
+                    <button
+                        class="order-btn"
+                        onclick="addToCart('Elegant Red Rose Bucket', 2500)">
+                        Order Now
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- PRODUCT 4 -->
+            <div class="card">
+
+                <div class="image-wrap">
+                    <img src="images/Luxury-Black-Rose-Bucket.png"
+                         alt="Luxury Black Rose Bucket">
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Luxury Black Rose Bucket</h4>
+
+                    <p class="desc">
+                        A unique and elegant flower bucket
+                        with a premium look.
+                    </p>
+
+                    <div class="price">
+                        Rs. 3,000
+                    </div>
+
+                    <button
+                        class="order-btn"
+                        onclick="addToCart('Luxury Black Rose Bucket', 3000)">
+                        Order Now
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- ================= BLOOM BUCKETS ================= -->
+        <div class="category-heading bloom-heading">
+            <h3>Bloom Buckets</h3>
+        </div>
+
+        <div class="products">
+
+
+            <!-- BLOOM PRODUCT 1 -->
+            <div class="card">
+
+                <div class="image-wrap">
+                    <img src="images/Pink-Rose-Bloom-Bucket.png"
+                         alt="Pink Rose Bloom Bucket">
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Pink Rose Bloom Bucket</h4>
+
+                    <p class="desc">
+                        Soft pink artificial roses arranged
+                        in a beautiful bloom bucket.
+                    </p>
+
+                    <div class="price">
+                        Rs. 3,000
+                    </div>
+
+                    <button
+                        class="order-btn"
+                        onclick="addToCart('Pink Rose Bloom Bucket', 3000)">
+                        Order Now
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- BLOOM PRODUCT 2 -->
+            <div class="card">
+
+                <div class="image-wrap">
+                    <img src="images/Pink & Red-Rose-Bloom-Bucket.png"
+                         alt="Pink and Red Rose Bloom Bucket">
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Pink & Red Rose Bloom Bucket</h4>
+
+                    <p class="desc">
+                        A lovely combination of pink and red
+                        roses for a beautiful gift.
+                    </p>
+
+                    <div class="price">
+                        Rs. 3,500
+                    </div>
+
+                    <button
+                        class="order-btn"
+                        onclick="addToCart('Pink & Red Rose Bloom Bucket', 3500)">
+                        Order Now
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- BLOOM PRODUCT 3 -->
+            <div class="card">
+
+                <div class="image-wrap">
+                    <img src="images/Red & pink-Rose-Bloom-Bucket.png"
+                         alt="Red Rose Bloom Bucket">
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Red & pink Rose Bloom Bucket</h4>
+
+                    <p class="desc">
+                        A classic red rose bloom bucket
+                        for gifting and decoration.
+                    </p>
+
+                    <div class="price">
+                        Rs. 3,000
+                    </div>
+
+                    <button
+                        class="order-btn"
+                        onclick="addToCart('red & pink rose Bloom Bucket', 3000)">
+                        Order Now
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- BLOOM PRODUCT 4 -->
+              <div class="card">
+
+                <div class="image-wrap">
+                    <img src="images/bloom bucket 2.png"
+
+
+                         alt="Red Rose Bloom Bucket">
+                </div>
+
+                <div class="card-content">
+
+                    <h4>Bloom Bucket</h4>
+
+                    <p class="desc">
+                        A classic bloom bucket
+                        for gifting and decoration.
+                    </p>
+
+                    <div class="price">
+                        Rs. 2,500
+                    </div>
+                   <button
+                        class="order-btn"
+                        onclick="addToCart('red & pink rose Bloom Bucket', 2500)">
+                        Order Now
+                    </button>
+
+                </div>
+            </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT US ================= -->
+    <section class="about-section" id="about">
+
+        <div class="section-heading">
+            <h2>About Us</h2>
+        </div>
+
+        <div class="about-content">
+
+            <div class="about-text">
+                <h3>Beautiful Flowers, Made With Care</h3>
+
+                <p>
+                    We create beautiful artificial flower buckets
+                    with care and creativity. Our handmade designs
+                    are suitable for gifts, home decoration,
+                    birthdays and special occasions.
+                </p>
+
+                <p>
+                    Every flower bucket is designed to give your
+                    space a fresh and elegant look.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WHY CHOOSE US ================= -->
+    <section class="why-section">
+
+        <div class="section-heading">
+            <h2>Why Choose Us?</h2>
+        </div>
+
+        <div class="why-container">
+
+            <div class="why-card">
+                <div class="why-icon">🌸</div>
+                <h3>Beautiful Designs</h3>
+                <p>
+                    Elegant artificial flower arrangements
+                    for every occasion.
+                </p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-icon">🎁</div>
+                <h3>Perfect For Gifts</h3>
+                <p>
+                    A lovely handmade gift for your
+                    family and friends.
+                </p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-icon">💐</div>
+                <h3>Long Lasting</h3>
+                <p>
+                    Artificial flowers stay beautiful
+                    for a long time.
+                </p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-icon">📦</div>
+                <h3>Easy Ordering</h3>
+                <p>
+                    Order easily through our WhatsApp
+                    order form.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact-section" id="contact">
+
+        <div class="section-heading">
+            <h2>Contact Us</h2>
+            <p>Have a question or want to place an order?</p>
+        </div>
+
+        <div class="contact-container">
+
+            <div class="contact-box">
+                <div class="contact-icon">📱</div>
+                <h3>Phone</h3>
+                <p>+92 326736116</p>
+            </div>
+
+            <div class="contact-box">
+                <div class="contact-icon">💬</div>
+                <h3>WhatsApp</h3>
+                <p>+92 326736116</p>
+            </div>
+
+            <div class="contact-box">
+                <div class="contact-icon">📍</div>
+                <h3>Location</h3>
+                <p>Sahiwal, Pakistan</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <h3>🌸 Flower Bucket</h3>
+
+            <p>
+                Beautiful artificial flower buckets
+                made with love and care.
+            </p>
+
+            <p class="copyright">
+                © 2026 Flower Bucket. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= WHATSAPP BUTTON ================= -->
+    <a
+        href="https://wa.me/92326736116"
+        class="whatsapp"
+        target="_blank"
+        aria-label="Contact us on WhatsApp">
+        💬
+    </a>
+        <!-- ================= CART MODAL ================= -->
+
+<div class="cart-modal" id="cartModal">
+
+    <div class="cart-box">
+
+        <button class="close-btn" onclick="closeCart()">
+            &times;
+        </button>
+
+        <h2>🛒 Your Cart</h2>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-total">
+            Total: Rs. <span id="cartTotal">0</span>
+        </div>
+
+        <hr>
+
+        <h3>Customer Details</h3>
+
+        <form onsubmit="sendCartOrder(event)">
+
+            <label>Your Name</label>
+
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Enter your name"
+                required>
+
+            <label>Your Phone Number</label>
+
+            <input
+                type="tel"
+                id="customerPhone"
+                placeholder="Enter your phone number"
+                required>
+
+            <label>Delivery Address</label>
+
+            <textarea
+                id="customerAddress"
+                rows="4"
+                placeholder="Enter your complete delivery address"
+                required></textarea>
+
+            <button
+                type="submit"
+                class="submit-order">
+                Send Order on WhatsApp
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+   <script>
+
+let cart = [];
+
+const businessPhone = "92326736116";
+
+
+function addToCart(productName, price) {
+
+    price = Number(price);
+
+    const existingProduct = cart.find(
+        item => item.name === productName
+    );
+
+    if (existingProduct) {
+
+        existingProduct.quantity++;
+
+    } else {
+
+        cart.push({
+            name: productName,
+            price: price,
+            quantity: 1
+        });
+
+    }
+
+    updateCart();
+
+    alert(productName + " added to cart!");
+
+}
+
+
+function updateCart() {
+
+    const cartItems = document.getElementById("cartItems");
+    const cartCount = document.getElementById("cartCount");
+    const cartTotal = document.getElementById("cartTotal");
+
+    cartItems.innerHTML = "";
+
+    let total = 0;
+    let count = 0;
+
+
+    if (cart.length === 0) {
+
+        cartItems.innerHTML =
+            "<p class='empty-cart'>Your cart is empty.</p>";
+
+    }
+
+
+    cart.forEach((item, index) => {
+
+        const itemTotal =
+            item.price * item.quantity;
+
+        total += itemTotal;
+
+        count += item.quantity;
+
+
+        cartItems.innerHTML += `
+
+            <div class="cart-item">
+
+                <div class="cart-item-info">
+
+                    <h4>${item.name}</h4>
+
+                    <p>
+                        Rs. ${item.price.toLocaleString()}
+                    </p>
+
+                </div>
+
+
+                <div class="quantity-controls">
+
+                    <button
+                        type="button"
+                        onclick="changeQuantity(${index}, -1)">
+                        −
+                    </button>
+
+                    <span>
+                        ${item.quantity}
+                    </span>
+
+                    <button
+                        type="button"
+                        onclick="changeQuantity(${index}, 1)">
+                        +
+                    </button>
+
+                </div>
+
+
+                <div class="item-total">
+
+                    Rs. ${itemTotal.toLocaleString()}
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="remove-btn"
+                    onclick="removeFromCart(${index})">
+
+                    Remove
+
+                </button>
+
+            </div>
+
+        `;
+
+    });
+
+
+    cartCount.textContent = count;
+
+    cartTotal.textContent =
+        total.toLocaleString();
+
+}
+
+
+function changeQuantity(index, change) {
+
+    cart[index].quantity += change;
+
+
+    if (cart[index].quantity <= 0) {
+
+        cart.splice(index, 1);
+
+    }
+
+
+    updateCart();
+
+}
+
+
+function removeFromCart(index) {
+
+    cart.splice(index, 1);
+
+    updateCart();
+
+}
+
+
+function openCart() {
+
+    document.getElementById("cartModal").style.display =
+        "flex";
+
+    updateCart();
+
+}
+
+
+function closeCart() {
+
+    document.getElementById("cartModal").style.display =
+        "none";
+
+}
+
+
+function sendCartOrder(event) {
+
+    event.preventDefault();
+
+
+    if (cart.length === 0) {
+
+        alert("Your cart is empty.");
+
+        return;
+
+    }
+
+
+    const name =
+        document.getElementById("customerName")
+        .value.trim();
+
+
+    const phone =
+        document.getElementById("customerPhone")
+        .value.trim();
+
+
+    const address =
+        document.getElementById("customerAddress")
+        .value.trim();
+
+
+    if (!name || !phone || !address) {
+
+        alert("Please fill all customer details.");
+
+        return;
+
+    }
+
+
+    let total = 0;
+
+    let productsMessage =
+        "!Details:\n\n";
+
+
+    cart.forEach((item, index) => {
+
+        const itemTotal =
+            item.price * item.quantity;
+
+        total += itemTotal;
+
+
+        productsMessage +=
+            (index + 1) + ". " +
+            item.name + "\n" +
+
+            "Price: Rs. " +
+            item.price.toLocaleString() + "\n" +
+
+            "Quantity: " +
+            item.quantity + "\n" +
+
+            "Subtotal: Rs. " +
+            itemTotal.toLocaleString() +
+
+            "\n\n";
+
+    });
+
+
+    const message =
+
+        "Hello! I want to place an order.\n\n" +
+
+        "Customer Name: " +
+        name + "\n" +
+
+        "Customer Phone: " +
+        phone + "\n" +
+
+        "Delivery Address: " +
+        address + "\n\n" +
+
+        productsMessage +
+
+        "GRAND TOTAL: Rs. " +
+        total.toLocaleString() +
+
+        "\n\nPlease confirm my order.";
+
+
+    const whatsappURL =
+
+        "https://wa.me/" +
+
+        businessPhone +
+
+        "?text=" +
+
+        encodeURIComponent(message);
+
+
+    window.location.href = whatsappURL;
+
+}
+
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (event.key === "Escape") {
+
+            closeCart();
+
+        }
+
+    }
+);
+
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function() {
+
+        updateCart();
+
+    }
+);
+
+</script>
+</script>
+
+</body>
+</html>
+
